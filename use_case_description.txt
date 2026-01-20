@@ -1,0 +1,7 @@
+Case Description: CrisisGuard
+CrisisGuard addresses a common failure during emergencies: unreliable or delayed mobile network connectivity. In real-world crisis situations, a traveling user may lose internet access, experience delayed message delivery, or regain connectivity only briefly. Traditional safety apps assume continuous network availability and often fail under these conditions.
+To solve this, CrisisGuard uses a distributed mobile agent system built with the Droidrun framework. The system involves two Android devices:
+A traveling device, which sends crisis alerts via SMS and WhatsApp. These messages may be delivered late or out of order due to network instability.
+A home device, which runs a persistent crisis-response relay agent. When it receives a crisis message, the agent interprets the situation and sends back concise, low-bandwidth safety instructions, optimized for short connectivity windows (10–20 seconds).
+The home agent remains active throughout the crisis, responding to follow-up questions and status updates until the user explicitly confirms safety (e.g., “SAFE”). Communication is designed to be SMS-first to minimize latency and maximize reliability, with internet messaging used only when it does not delay response delivery.
+This approach ensures that meaningful guidance can still reach the user even when connectivity is intermittent, making CrisisGuard suitable for real-world emergency scenarios involving travel, remote locations, or poor network conditions.
